@@ -58,17 +58,22 @@ class MyApp extends StatelessWidget {
       ),
     );
 
+    Image lake = new Image.asset(
+        'images/lake.jpg',
+      height: 240.0,
+      fit: BoxFit.cover
+    );
+
     return new MaterialApp(
         title: 'Flutter App',
         home: new Scaffold(
             appBar: new AppBar(title: new Text("Flutter ")),
             body: new ListView(children: [
+              lake,
               titleSection,
               textSection,
               buttonSection,
             ]))
     );
-
-
   }
 }
